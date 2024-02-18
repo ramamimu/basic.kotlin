@@ -14,16 +14,14 @@ package com.dicoding.exam.latihan2
 
 /**
  *  TODO 1
- *  Sesuaikan fungsi di bawah ini agar dapat mengembalikkan nilai dengan rumus
- *  perhitungan berikut:
+// *  Sesuaikan fungsi di bawah ini agar dapat mengembalikkan nilai dengan rumus
+// *  perhitungan berikut:
  *
  *      valueA + (valueB - valueC)
  *
  *  Jika valueC bernilai null, silakan tetapkan nilai 50 sebagai nilai default-nya
  */
-fun calculate(valueA: Int, valueB: Int, valueC: Int?): Int {
-    return 0
-}
+fun calculate(valueA: Int, valueB: Int, valueC: Int?): Int = valueA + (valueB - (valueC ?: 50))
 
 /**
  *  TODO 2
@@ -32,7 +30,7 @@ fun calculate(valueA: Int, valueB: Int, valueC: Int?): Int {
  *      Result is ${result}
  */
 fun result(result: Int): String {
-    return ""
+    return "Result is $result"
 }
 
 fun main() {
